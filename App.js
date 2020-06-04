@@ -2,13 +2,22 @@ import React from 'react'
 import { Provider } from 'react-redux'
 import store from './src/store'
 import { AppStore } from './src/AppStore'
+import { View, Text, StyleSheet } from 'react-native'
 
-const App = () => {
+export const App = () => {
 	return (
-		<Provider store={store}>
-			<AppStore />
-		</Provider>
+		<View>
+			<Text>Redux</Text>
+		</View>
 	)
 }
+
+// const App = () => {
+// 	return (
+// 		// <Provider store={store}>
+// 			<AppStore />
+// 		</Provider>
+// 	)
+// }
 
 export default App
